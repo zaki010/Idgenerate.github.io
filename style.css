@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #nextButton {
+    flex-grow: 0;
+    width: 100px;
+    margin-left: 10px;
+  }
+  
+  #generateButton {
+    flex-grow: 0;
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  #idDisplay {
+    margin-top: 20px;
+  }
+  
+  #idTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #idTable th,
+  #idTable td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  #idTable th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .copy-symbol {
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #idTable td.serial-number,
+    #idTable td.name,
+    #idTable td.id {
+      width: auto;
+      display: block;
+    }
+  
+    #idTable td.serial-number::before,
+    #idTable td.name::before,
+    #idTable td.id::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+    }
+  }
+  
